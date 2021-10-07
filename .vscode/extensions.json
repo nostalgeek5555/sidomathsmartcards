@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "sumneko.lua",
+        "tomblind.local-lua-debugger-vscode",
+        "thejustinwalsh.textproto-grammer",
+        "slevesque.shader",
+        "cadenas.vscode-glsllint"
+    ]
+}

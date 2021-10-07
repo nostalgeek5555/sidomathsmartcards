@@ -1,0 +1,37 @@
+[project]
+title = SidomathSmartCards
+custom_resources = 
+
+[bootstrap]
+main_collection = /sidomath_smart_cards/scenes/controller.collectionc
+render = /builtins/render/default.renderc
+
+[input]
+game_binding = /input/game.input_bindingc
+gamepads = /builtins/input/default.gamepadsc
+
+[display]
+width = 1920
+height = 1080
+variable_dt = 1
+
+[physics]
+scale = 0.02
+debug = 0
+max_collisions = 256
+max_contacts = 256
+gravity_y = -100
+
+[script]
+shared_state = 1
+
+[android]
+iap_provider = GooglePlay
+package = com.britzl.publicexamples.menu_and_game
+
+[osx]
+bundle_identifier = com.britzl.publicexamples.menu_and_game
+
+[ios]
+bundle_identifier = com.britzl.publicexamples.menu_and_game
+
