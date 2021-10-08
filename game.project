@@ -1,6 +1,7 @@
 [project]
 title = SidomathSmartCards
 custom_resources = 
+dependencies#0 = https://github.com/klaytonkowalski/defold-grid-engine/archive/master.zip
 
 [bootstrap]
 main_collection = /sidomath_smart_cards/scenes/controller.collectionc
