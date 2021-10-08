@@ -1,59 +1,6 @@
 name: "game"
 scale_along_z: 0
 embedded_instances {
-  id: "go"
-  data: "components {\n"
-  "  id: \"script\"\n"
-  "  component: \"/sidomath_smart_cards/scripts/game.script\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"factory\"\n"
-  "  type: \"factory\"\n"
-  "  data: \"prototype: \\\"/sidomath_smart_cards/thing.go\\\"\\n"
-  "load_dynamically: false\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
   id: "background"
   data: "embedded_components {\n"
   "  id: \"bg_base\"\n"
@@ -129,14 +76,27 @@ embedded_instances {
   }
 }
 embedded_instances {
-  id: "bg-board"
-  data: "embedded_components {\n"
-  "  id: \"bg_board\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/sidomath_smart_cards/atlas/main.atlas\\\"\\n"
-  "default_animation: \\\"bg-board-mockup\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
+  id: "boardmanager"
+  data: "components {\n"
+  "  id: \"boardmanager\"\n"
+  "  component: \"/sidomath_smart_cards/scripts/boardmanager.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"blockfactory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/sidomath_smart_cards/prefabs/block.go\\\"\\n"
+  "load_dynamically: false\\n"
   "\"\n"
   "  position {\n"
   "    x: 0.0\n"
@@ -152,9 +112,9 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 960.0
-    y: 371.0
-    z: -0.8
+    x: 0.0
+    y: 0.0
+    z: 0.0
   }
   rotation {
     x: 0.0
@@ -163,7 +123,42 @@ embedded_instances {
     w: 1.0
   }
   scale3 {
-    x: 1.2
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "gamemanager"
+  data: "components {\n"
+  "  id: \"gamemanager\"\n"
+  "  component: \"/sidomath_smart_cards/scripts/managers/gamemanager.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
     y: 1.0
     z: 1.0
   }
