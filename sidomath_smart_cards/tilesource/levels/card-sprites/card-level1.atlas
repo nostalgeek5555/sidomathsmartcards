@@ -1,0 +1,47 @@
+animations {
+  id: "type1"
+  images {
+    image: "/sidomath_smart_cards/images/gameplay_elements/card-sprites/level-1/4.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  playback: PLAYBACK_NONE
+  fps: 0
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "type2"
+  images {
+    image: "/sidomath_smart_cards/images/gameplay_elements/card-sprites/level-1/2.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 60
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "type3"
+  images {
+    image: "/sidomath_smart_cards/images/gameplay_elements/card-sprites/level-1/3.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 60
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "type4"
+  images {
+    image: "/sidomath_smart_cards/images/gameplay_elements/card-sprites/level-1/1.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 60
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+margin: 0
+extrude_borders: 2
+inner_padding: 0
