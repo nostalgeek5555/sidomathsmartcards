@@ -79,7 +79,7 @@ embedded_instances {
   id: "boardmanager"
   data: "components {\n"
   "  id: \"boardmanager\"\n"
-  "  component: \"/sidomath_smart_cards/scripts/boardmanager.script\"\n"
+  "  component: \"/sidomath_smart_cards/scripts/managers/boardmanager.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"

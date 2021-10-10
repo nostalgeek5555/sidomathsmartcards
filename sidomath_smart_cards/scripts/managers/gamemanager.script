@@ -1,4 +1,19 @@
+--current level data
+current_levelId = 0
+current_levelName = ""
+current_levelJsonString = ""
+current_levelTotalCards = 0
+
+
 function init(self)
   msg.post(".", "acquire_input_focus")
   msg.post("/boardmanager#boardmanager", "start_level")
+
+  local leveldata_json = sys.load_resource("/res/leveldata/leveldata.json")
+  local leveldata_json_table = json.decode(leveldata_json)
+  pprint(leveldata_json_table)
+  
+end
+
+function on_message(self, message_id, message, sender)
 end

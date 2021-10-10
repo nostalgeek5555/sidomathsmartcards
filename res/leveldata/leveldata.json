@@ -1,0 +1,15 @@
+[
+    {
+      "level-id" : 1,
+      "level-name" : "kakatua",
+      "level-card-total" : 39,
+      "level-card-data" : "level1.json"
+    },
+
+    {
+      "level-id" : 2,
+      "level-name" : "beruang",
+      "level-card-total" : 39,
+      "level-card-data" : "level2.json"
+    }
+  ]
